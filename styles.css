@@ -128,18 +128,18 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 600px; /* Минимальная ширина для удобства */
+    min-width: 200px; /* Минимальная ширина для удобства */
     margin: 20px 0;
     font-size: 18px;
     text-align: left;
     background-color: #1e1e1e;
     color: #c9c9c9;
-    border-radius: 8px;
+    border-radius: 10px;
     overflow: hidden;
 }
 
 th, td {
-    padding: 10px;
+    padding: 7px;
     border-bottom: 2px solid #0c0b0b;
     border: 1px solid #444;
     text-align: left;
@@ -155,4 +155,9 @@ th {
 tr:hover {
     background-color: #383838;
     transition: 0.3s ease-in-out;
+}
+
+.scroll-container {
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
 }
