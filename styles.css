@@ -5,6 +5,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.5; /* Увеличенная высота строки */
+    font-size: 16px;
 }
 
 header {
@@ -120,6 +121,10 @@ footer {
     }
 }
 
+button {
+    padding: 12px 20px;
+}
+
 .table-container {
     width: 100%;
     overflow-x: auto; /* Добавляет горизонтальную прокрутку */
@@ -128,7 +133,7 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    min-width: 200px; /* Минимальная ширина для удобства */
+    min-width: 180px; /* Минимальная ширина для удобства */
     margin: 20px 0;
     font-size: 18px;
     text-align: left;
