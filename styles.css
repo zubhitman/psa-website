@@ -4,6 +4,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.5; /* Увеличенная высота строки */
 }
 
 header {
@@ -11,28 +12,16 @@ header {
     padding: 20px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-    background: linear-gradient(to right, #1e1e1e, #333);
-}
-
-/* Тени с фолбэками */
-button {
-    box-shadow: none; /* Фолбэк */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
-    display: block; /* Фолбэк */
-    display: flex;
-    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     display: inline;
     margin: 0 15px;
-    margin-right: 10px; /* Вместо gap */
 }
 
 nav ul li a {
@@ -113,12 +102,10 @@ footer {
 @media (max-width: 768px) {
     nav ul {
         padding: 0;
-        display: block;
     }
     nav ul li {
         display: block;
         margin: 10px 0;
-        margin-bottom: 10px;
     }
     nav ul li a {
         font-size: 16px;
@@ -131,9 +118,6 @@ footer {
         font-size: 14px; /* Уменьшаем шрифт для мобильных */
         padding: 8px;
     }
-    h2 {
-        font-size: 18px;
-    }
 }
 
 .table-container {
@@ -144,7 +128,7 @@ footer {
 table {
     width: 100%;
     border-collapse: collapse;
-    /* min-width: 600px; Минимальная ширина для удобства */
+    min-width: 600px; /* Минимальная ширина для удобства */
     margin: 20px 0;
     font-size: 18px;
     text-align: left;

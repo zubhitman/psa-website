@@ -1,18 +1,16 @@
-document.addEventListener("DOMContentLoaded", function () {
-    var headers = document.querySelectorAll("h2");
+document.addEventListener("DOMContentLoaded", function() {
+    document.querySelectorAll("h2").forEach(header => {
+        let content = header.nextElementSibling;
+        
+        // Проверяем, должен ли текст быть скрытым по умолчанию
+        if (header.getAttribute("data-toggle") === "hidden") {
+            content.classList.remove("visible"); // Изначально скрыто
+        } else {
+            content.classList.add("visible"); // Изначально открыто
+        }
 
-    for (var i = 0; i < headers.length; i++) {
-        (function (header) {
-            var content = header.nextElementSibling;
-            content.classList.add("visible");
-
-            header.addEventListener("click", function () {
-                if (content.classList.contains("visible")) {
-                    content.classList.remove("visible");
-                } else {
-                    content.classList.add("visible");
-                }
-            });
-        })(headers[i]);
-    }
+        header.addEventListener("click", function() {
+            content.classList.toggle("visible");
+        });
+    });
 });
