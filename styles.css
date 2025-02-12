@@ -113,11 +113,21 @@ footer {
         background-color: #333;
         border-radius: 5px;
     }
+    th, td {
+        font-size: 14px; /* Уменьшаем шрифт для мобильных */
+        padding: 8px;
+    }
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto; /* Добавляет горизонтальную прокрутку */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
+    /* min-width: 600px; Минимальная ширина для удобства */
     margin: 20px 0;
     font-size: 18px;
     text-align: left;
@@ -128,8 +138,10 @@ table {
 }
 
 th, td {
-    padding: 12px;
+    padding: 10px;
     border-bottom: 2px solid #0c0b0b;
+    border: 1px solid #444;
+    text-align: left;
 }
 
 th {
